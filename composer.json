@@ -1,0 +1,20 @@
+{
+  "name": "epii/queue",
+  "description": " 基于php本身的消息队列，多线程,多进程 消息传递。无需任何组件和扩展。",
+  "authors": [
+    {
+      "name": "MrRen Epii",
+      "email": "543169072@qq.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.0",
+    "epii/epii-factory-pattern-common":">=0.0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "epii\\queue\\": "src/"
+    }
+  }
+}
