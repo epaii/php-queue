@@ -73,7 +73,7 @@ class system  implements IQueue{
         return $out;
     }
 
-    public   function pushTask($data,$proj = "1"){
+    public   function pushTaskSync($data,$proj = "1"){
          $t_data = ["task_id"=>uniqid("epii_"),"data"=>$data];
          $this->push($t_data,$proj);
          return $this->pop(true,true,$t_data["task_id"]);

@@ -18,7 +18,7 @@ class EpiiQueue extends FactorCommon
     }
 
     public static function pushTaskSync($data,$proj = "1"){
-        return self::getDriver()->pushTask($data  ,$proj );
+        return self::getDriver()->pushTaskSync($data  ,$proj );
     }
 
     public static function popTask($proj = "1"){
